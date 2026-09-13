@@ -6,8 +6,8 @@
 </a>
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/bdurandev/bdurandev/output/github-snake-dark.svg">
-  <img alt="Contribution snake" src="https://raw.githubusercontent.com/bdurandev/bdurandev/output/github-snake.svg">
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/bdurandev/bdurandev/output/github-snake-dark.svg?v=2">
+  <img alt="Contribution snake" src="https://raw.githubusercontent.com/bdurandev/bdurandev/output/github-snake.svg?v=2">
 </picture>
 
 <a href="https://apps.apple.com/developer/id1677311418">

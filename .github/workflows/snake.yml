@@ -21,6 +21,15 @@ jobs:
             dist/github-snake.svg
             dist/github-snake-dark.svg?palette=github-dark
 
+      # snk hız ayarı açmıyor; keyframe'ler süreye göre yüzde olduğu için süreyi ölçeklemek yeterli
+      - name: Speed up snake
+        run: |
+          python3 - <<'EOF'
+          import pathlib, re
+          for p in pathlib.Path("dist").glob("*.svg"):
+              p.write_text(re.sub(r"(\d+)ms", lambda m: f"{round(int(m.group(1)) * 0.4)}ms", p.read_text()))
+          EOF
+
       # görseller main'i kirletmesin diye ayrı dal
       - uses: crazy-max/ghaction-github-pages@v4
         with:

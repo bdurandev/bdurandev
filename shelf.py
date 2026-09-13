@@ -91,18 +91,31 @@ def fetch_apps():
                 seen.setdefault(r["trackId"], r)
     if not seen:
         raise RuntimeError("mağazada uygulama yok")
+    # Apple CDN aynı ikonu her istekte farklı baytlarla veriyor: adres değişmediyse
+    # önbellekteki ikonu kullan, yoksa her gün ~1 MB commit düşer
+    path = ROOT / "cache" / "apps.json"
+    old = {a.get("id"): a for a in json.loads(path.read_text())} if path.exists() else {}
     apps = []
     for r in seen.values():
-        icon = get(r["artworkUrl100"].replace("100x100bb", "120x120bb"))
-        mime = "image/png" if icon[:4] == b"\x89PNG" else "image/jpeg"
+        url = r["artworkUrl100"].replace("100x100bb", "120x120bb")
+        artwork = url.split("/image/", 1)[-1]  # isN-ssl ana makinesi değişebilir, yolu karşılaştır
+        prev = old.get(r["trackId"])
+        if prev and prev.get("artwork") == artwork:
+            icon_uri = prev["icon"]
+        else:
+            icon = get(url)
+            mime = "image/png" if icon[:4] == b"\x89PNG" else "image/jpeg"
+            icon_uri = f"{mime};base64," + base64.b64encode(icon).decode()
         apps.append({
+            "id": r["trackId"],
             "name": r["trackName"],
             "genre": r["primaryGenreName"],
             "version": r["version"],
             "released": r["currentVersionReleaseDate"][:10],
             "rating": round(r.get("averageUserRating") or 0, 2),
             "ratings": r.get("userRatingCount") or 0,
-            "icon": f"{mime};base64," + base64.b64encode(icon).decode(),
+            "artwork": artwork,
+            "icon": icon_uri,
         })
     # en iyi puan başta, puansızlar sonda; eşitlikte ada göre ki her gün aynı sıra çıksın
     apps.sort(key=lambda a: (-a["rating"], -a["ratings"], a["name"].lower()))

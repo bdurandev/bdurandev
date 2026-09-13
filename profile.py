@@ -1,10 +1,11 @@
-"""Profil kartını (dark_mode.svg / light_mode.svg) üretir.
+"""Profil kartını (dark_mode.svg / light_mode.svg) ve yan kartları üretir.
 
-GitHub GraphQL API'den depo, yıldız, commit, takipçi ve satır sayılarını çeker;
-ascii.txt ile birlikte iki SVG'ye yazar. Satır sayıları depo başına HEAD oid'iyle
-cache/stats.json'da tutulur, sadece değişen depolar yeniden sayılır.
+GitHub GraphQL API'den depo, commit ve satır sayılarını çeker; App Store verisini
+shelf.py'den alır; ascii.txt ile birlikte SVG'lere yazar. Satır sayıları depo başına
+HEAD oid'iyle cache/stats.json'da tutulur, sadece değişen depolar yeniden sayılır.
 
 ACCESS_TOKEN: fine-grained PAT, All repositories, Contents + Metadata read-only.
+Yoksa GitHub sayıları önbellekten çizilir; App Store ve akış yine güncellenir.
 """
 import json
 import os
@@ -14,6 +15,8 @@ import urllib.request
 from hashlib import sha256
 from pathlib import Path
 from xml.sax.saxutils import escape
+
+import shelf
 
 ROOT = Path(__file__).parent
 CACHE = ROOT / "cache" / "stats.json"
@@ -50,9 +53,9 @@ INFO = [
 
 THEMES = {
     "dark": dict(bg="#161b22", text="#c9d1d9", key="#ffa657", value="#a5d6ff",
-                 add="#3fb950", dele="#f85149", cc="#616e7f"),
+                 add="#3fb950", dele="#f85149", cc="#616e7f", muted="#8b949e"),
     "light": dict(bg="#f6f8fa", text="#24292f", key="#953800", value="#0a3069",
-                  add="#1a7f37", dele="#cf222e", cc="#c2cfde"),
+                  add="#1a7f37", dele="#cf222e", cc="#c2cfde", muted="#57606a"),
 }
 
 
@@ -224,15 +227,16 @@ def stats_lines(s):
     right = WIDTH - STAT_LEFT - 3
     repos = [(n(s["repos"]), "value"), (" {", None), ("Contributed", "key"),
              (": ", None), (n(s["contributed"]), "value"), ("}", None)]
+    # yıldız/takipçi 0: yerine App Store'daki gerçek karşılık
+    rating = [(f"{s['rating']:.1f}/5", "value"), (f" ({n(s['ratings'])})", None)] if s["ratings"] else "-"
     total = n(s["add"] - s["del"])
     loc_val = [(total, "value"), (" ( ", None), (n(s["add"]) + "++", "add"),
                (", ", None), (n(s["del"]) + "--", "dele"), (" )", None)]
     vlen = sum(len(t) for t, _ in loc_val)
     label = "Lines of Code on GitHub" if WIDTH - 2 - 24 - 2 - vlen >= 3 else "Lines of Code"
     return [
-        kv("Repos", repos, STAT_LEFT) + [(" | ", "cc")] + kv("Stars", n(s["stars"]), right, lead=""),
-        kv("Commits", n(s["commits"]), STAT_LEFT) + [(" | ", "cc")]
-        + kv("Followers", n(s["followers"]), right, lead=""),
+        kv("Repos", repos, STAT_LEFT) + [(" | ", "cc")] + kv("Apps", n(s["apps"]), right, lead=""),
+        kv("Commits", n(s["commits"]), STAT_LEFT) + [(" | ", "cc")] + kv("Rating", rating, right, lead=""),
         kv(label, loc_val, WIDTH),
     ]
 
@@ -292,9 +296,17 @@ def render(stats):
 
 
 if __name__ == "__main__":
-    if "--render-only" in sys.argv:
-        stats = json.loads(CACHE.read_text())
-    else:
+    offline = "--render-only" in sys.argv
+    if os.environ.get("ACCESS_TOKEN") and not offline:
         stats = fetch()
+    else:
+        if not offline:
+            print("ACCESS_TOKEN yok: GitHub sayıları önbellekten çiziliyor", file=sys.stderr)
+        stats = json.loads(CACHE.read_text())
+    apps = shelf.load("apps.json", shelf.fetch_apps, offline)
+    feed = shelf.load("feed.json", shelf.fetch_feed, offline)
+    stats.update(shelf.app_stats(apps))
     render(stats)
+    shelf.render_apps(apps, THEMES)
+    shelf.render_recent(apps, feed, THEMES)
     print(json.dumps({k: v for k, v in stats.items() if k != "loc"}))

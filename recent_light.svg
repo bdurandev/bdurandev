@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1028px" height="210px" font-family="ConsolasFallback,Consolas,Menlo,'DejaVu Sans Mono',monospace" font-size="14px">
+<style>
+.key {fill: #953800;} .value {fill: #0a3069;} .add {fill: #1a7f37;} .cc {fill: #c2cfde;} .muted {fill: #57606a;}
+text, tspan {white-space: pre;}
+</style>
+<rect width="1028px" height="210px" fill="#f6f8fa" rx="15"/>
+<line x1="514" y1="22" x2="514" y2="188" stroke="#c2cfde" stroke-opacity="0.4"/>
+<text x="25" y="40" fill="#24292f"><tspan class="key">bahattin@duran</tspan>:<tspan class="value">~</tspan>$ tail ~/AppStore/releases</text>
+<text x="524" y="40" fill="#24292f"><tspan class="key">bahattin@duran</tspan>:<tspan class="value">~</tspan>$ tail illustrarch.com/feed</text>
+<text x="25" y="70" fill="#24292f">
+<tspan x="25" y="70"><tspan class="muted">09-08  </tspan><tspan class="value">LoveLog</tspan><tspan class="cc"> .................................. </tspan><tspan class="key">v1.0</tspan></tspan>
+<tspan x="25" y="92"><tspan class="muted">08-31  </tspan><tspan class="value">RenDeploy</tspan><tspan class="cc"> ............................... </tspan><tspan class="key">v1.19</tspan></tspan>
+<tspan x="25" y="114"><tspan class="muted">08-27  </tspan><tspan class="value">MediLog</tspan><tspan class="cc"> ................................. </tspan><tspan class="key">v1.42</tspan></tspan>
+<tspan x="25" y="136"><tspan class="muted">08-26  </tspan><tspan class="value">Who Is</tspan><tspan class="cc"> .................................. </tspan><tspan class="key">v1.28</tspan></tspan>
+<tspan x="25" y="158"><tspan class="muted">08-26  </tspan><tspan class="value">WatchSnap</tspan><tspan class="cc"> ................................ </tspan><tspan class="key">v1.4</tspan></tspan>
+<tspan x="25" y="180"><tspan class="muted">08-26  </tspan><tspan class="value">SupaLog</tspan><tspan class="cc"> ................................. </tspan><tspan class="key">v1.02</tspan></tspan>
+</text>
+<text x="524" y="70" fill="#24292f">
+<tspan x="524" y="70"><tspan class="muted">09-13  </tspan><tspan class="value">Ahmedabad Civic Body Plans 3D Digital Twin of …</tspan></tspan>
+<tspan x="524" y="92"><tspan class="muted">09-13  </tspan><tspan class="value">Inhabiting the Roof by Paris Atlas</tspan></tspan>
+<tspan x="524" y="114"><tspan class="muted">09-12  </tspan><tspan class="value">SAGA Space Architects Completes 36 3D Printed …</tspan></tspan>
+<tspan x="524" y="136"><tspan class="muted">09-12  </tspan><tspan class="value">Savan House by Nobico Studio</tspan></tspan>
+<tspan x="524" y="158"><tspan class="muted">09-11  </tspan><tspan class="value">OpenAI’s Astra Model Aims to Turn AI Into an A…</tspan></tspan>
+<tspan x="524" y="180"><tspan class="muted">09-11  </tspan><tspan class="value">KAFD Metro Station by Zaha Hadid Architects</tspan></tspan>
+</text>
+</svg>

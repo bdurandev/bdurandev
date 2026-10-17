@@ -1,6 +1,7 @@
 [
  {
   "id": 6746694543,
+  "bundle": "bcc.Business-Card-Creator",
   "name": "Business Card Generator QR",
   "genre": "Utilities",
   "version": "1.33",
@@ -12,6 +13,7 @@
  },
  {
   "id": 6747253604,
+  "bundle": "com.fi.fishidentifier",
   "name": "Fish Identifier AI: FishSnap",
   "genre": "Education",
   "version": "1.25",
@@ -23,6 +25,7 @@
  },
  {
   "id": 6746726195,
+  "bundle": "dmq.Daily-Motivation-Quotes",
   "name": "Motivana Daily Quotes",
   "genre": "Lifestyle",
   "version": "1.35",
@@ -34,6 +37,7 @@
  },
  {
   "id": 6747406599,
+  "bundle": "com.sht.Side-Hustle-Tracker",
   "name": "Side Hustle Income Tracker",
   "genre": "Productivity",
   "version": "1.25",
@@ -45,6 +49,7 @@
  },
  {
   "id": 6746767938,
+  "bundle": "sim.Simple-Invoice-Maker",
   "name": "Simplio Invoice Generator",
   "genre": "Utilities",
   "version": "1.26",
@@ -56,6 +61,7 @@
  },
  {
   "id": 6748362993,
+  "bundle": "com.stc.-0K-Steps-Challenge",
   "name": "10K Steps: Daily Goal",
   "genre": "Health & Fitness",
   "version": "1.19",
@@ -67,6 +73,7 @@
  },
  {
   "id": 6746387867,
+  "bundle": "adt.Adsense-Revenue-Tracker",
   "name": "ADWize: AD Revenue Tracker",
   "genre": "Utilities",
   "version": "1.61",
@@ -78,6 +85,7 @@
  },
  {
   "id": 6747597282,
+  "bundle": "com.bt.BodiLog-Body-Tracker",
   "name": "Body Weight Tracker: BodiLog",
   "genre": "Health & Fitness",
   "version": "1.38",
@@ -89,6 +97,7 @@
  },
  {
   "id": 6746720104,
+  "bundle": "co.Closet-Organizer",
   "name": "Closet & Outfit Organizer",
   "genre": "Lifestyle",
   "version": "1.24",
@@ -100,6 +109,7 @@
  },
  {
   "id": 6747445893,
+  "bundle": "com.esc.Ecommerce-Shipping-Calculator",
   "name": "Ecommerce Shipping Calculator",
   "genre": "Utilities",
   "version": "1.18",
@@ -111,6 +121,7 @@
  },
  {
   "id": 6746454379,
+  "bundle": "efc.Etsy-Fee-Calculator",
   "name": "Expy Profit Calculator",
   "genre": "Utilities",
   "version": "1.34",
@@ -122,6 +133,7 @@
  },
  {
   "id": 6749139776,
+  "bundle": "com.fi.Fast-Ideabook",
   "name": "Fast Idea Book",
   "genre": "Productivity",
   "version": "1.20.4",
@@ -133,6 +145,7 @@
  },
  {
   "id": 6747403599,
+  "bundle": "com.htk.Habit-Tracker-Kit",
   "name": "Habit Tracker Kit",
   "genre": "Productivity",
   "version": "1.30",
@@ -144,6 +157,7 @@
  },
  {
   "id": 6747621179,
+  "bundle": "com.ho.HomiLog---House-Organizer",
   "name": "Home Tasks Tracker: HomiLog",
   "genre": "Productivity",
   "version": "1.18",
@@ -155,6 +169,7 @@
  },
  {
   "id": 6747418766,
+  "bundle": "com.ik.Intermittent-Kit",
   "name": "Intermittent Fasting Kit",
   "genre": "Health & Fitness",
   "version": "1.19",
@@ -166,6 +181,7 @@
  },
  {
   "id": 6747687350,
+  "bundle": "com.ho.TraveLog-Travel-Diary",
   "name": "Journal & Memories: TraveLog",
   "genre": "Productivity",
   "version": "1.20.4",
@@ -177,6 +193,7 @@
  },
  {
   "id": 6746670197,
+  "bundle": "khh.Kubaj-Hacim-Hesaplay-c-",
   "name": "Kubaj: Volume Calculator",
   "genre": "Utilities",
   "version": "1.24",
@@ -188,6 +205,7 @@
  },
  {
   "id": 6747588049,
+  "bundle": "com.mt.Medicine-Tracker",
   "name": "Medicine Tracker: MediLog",
   "genre": "Health & Fitness",
   "version": "1.42",
@@ -199,6 +217,7 @@
  },
  {
   "id": 6746641999,
+  "bundle": "nrs.NFC-Reader-Scanner",
   "name": "NFC Reader Scanner Tool",
   "genre": "Utilities",
   "version": "1.28",
@@ -210,6 +229,7 @@
  },
  {
   "id": 6746731417,
+  "bundle": "pw.Pomodoro-Working",
   "name": "Pomoly Focused Working",
   "genre": "Utilities",
   "version": "1.26",
@@ -221,6 +241,7 @@
  },
  {
   "id": 6747311096,
+  "bundle": "com.RenDeploy",
   "name": "RenDeploy - Deployment Center",
   "genre": "Utilities",
   "version": "1.19",
@@ -232,6 +253,7 @@
  },
  {
   "id": 6747917190,
+  "bundle": "com.ssl.Simplio-Shopping-List",
   "name": "Simplio Shopping List Planner",
   "genre": "Productivity",
   "version": "1.15.3",
@@ -243,6 +265,7 @@
  },
  {
   "id": 6746682372,
+  "bundle": "tft.Tu-rkiye-Fuar-Takip",
   "name": "Turkiye Fuar Takvimi",
   "genre": "Utilities",
   "version": "1.23",
@@ -254,6 +277,7 @@
  },
  {
   "id": 6746653816,
+  "bundle": "wic.Who-Is-Checker",
   "name": "Who Is Domain Checker",
   "genre": "Utilities",
   "version": "1.28",
@@ -265,6 +289,7 @@
  },
  {
   "id": 6747517228,
+  "bundle": "com.st.Simplio-Notepad",
   "name": "Simplio Notepad - Quick Notes",
   "genre": "Productivity",
   "version": "1.55",
@@ -276,6 +301,7 @@
  },
  {
   "id": 6762845396,
+  "bundle": "com.substrack.Subscription-Tracker",
   "name": "Subly Tracker: Subscriptions",
   "genre": "Finance",
   "version": "1.5",
@@ -287,6 +313,7 @@
  },
  {
   "id": 6747011494,
+  "bundle": "bdm.Bubble-Diagram-Maker",
   "name": "Bubble Diagram Maker",
   "genre": "Utilities",
   "version": "1.25",
@@ -298,6 +325,7 @@
  },
  {
   "id": 6746756038,
+  "bundle": "srr.Simple-RSS-Reader",
   "name": "Simplio RSS Reader",
   "genre": "News",
   "version": "1.33",
@@ -309,6 +337,7 @@
  },
  {
   "id": 6748313604,
+  "bundle": "com.hit.Home-Inventory-Tracker",
   "name": "Home Inventory Tracker: HoTi",
   "genre": "Productivity",
   "version": "1.13",
@@ -320,6 +349,7 @@
  },
  {
   "id": 6746699306,
+  "bundle": "cm.Clipboard-Manager",
   "name": "Pastin Clipboard Manager",
   "genre": "Utilities",
   "version": "1.27",
@@ -331,6 +361,7 @@
  },
  {
   "id": 6746551773,
+  "bundle": "qcr.QR-Code-Scanner",
   "name": "QR & Barcode Tool - All In One",
   "genre": "Utilities",
   "version": "1.29",
@@ -342,6 +373,7 @@
  },
  {
   "id": 6747359987,
+  "bundle": "com.dr.dailyroutines.Simplio-Daily-Routines",
   "name": "Simplio Daily Routines",
   "genre": "Productivity",
   "version": "1.21",
@@ -353,6 +385,7 @@
  },
  {
   "id": 6747007692,
+  "bundle": "mp.Meal-Reminder",
   "name": "Simplio Meal Reminder",
   "genre": "Lifestyle",
   "version": "1.15.3",
@@ -364,6 +397,7 @@
  },
  {
   "id": 6766488443,
+  "bundle": "com.mk0net.sugarlog",
   "name": "Blood Sugar Tracker: SugarLog",
   "genre": "Medical",
   "version": "1.4",
@@ -375,6 +409,7 @@
  },
  {
   "id": 6767477437,
+  "bundle": "com.shelf.Shelf-Readlog",
   "name": "Book Tracker: ShelfLog",
   "genre": "Book",
   "version": "1.3",
@@ -386,6 +421,7 @@
  },
  {
   "id": 6767270931,
+  "bundle": "com.mk0.nutrilog",
   "name": "Calorie Tracker: NutriLog",
   "genre": "Health & Fitness",
   "version": "1.3",
@@ -397,6 +433,7 @@
  },
  {
   "id": 6766952010,
+  "bundle": "com.mk0net.Diecast-Garage-Log",
   "name": "Garage: Diecast & Hot Wheels",
   "genre": "Lifestyle",
   "version": "1.3",
@@ -408,6 +445,7 @@
  },
  {
   "id": 6794709882,
+  "bundle": "com.mk0.garagio",
   "name": "Garagio Fuel & Service Costs",
   "genre": "Utilities",
   "version": "1.0",
@@ -419,6 +457,7 @@
  },
  {
   "id": 6766844848,
+  "bundle": "com.mk0net.Kala--CountLog",
   "name": "Kala: Day Counter",
   "genre": "Productivity",
   "version": "1.4",
@@ -430,6 +469,7 @@
  },
  {
   "id": 6794922895,
+  "bundle": "com.mk0.klauz",
   "name": "Klauz Contracts & Signing",
   "genre": "Business",
   "version": "1.0",
@@ -441,6 +481,7 @@
  },
  {
   "id": 6767003247,
+  "bundle": "com.mk0net.Konap",
   "name": "Konap: Building Manager",
   "genre": "Utilities",
   "version": "1.2",
@@ -452,6 +493,7 @@
  },
  {
   "id": 6767026346,
+  "bundle": "com.mk0net.LoveLog",
   "name": "LoveLog Days Together",
   "genre": "Lifestyle",
   "version": "1.0",
@@ -463,6 +505,7 @@
  },
  {
   "id": 6763340719,
+  "bundle": "com.period.Period-Tracker",
   "name": "Lunara: Period Tracker",
   "genre": "Health & Fitness",
   "version": "1.4",
@@ -474,6 +517,7 @@
  },
  {
   "id": 6767188068,
+  "bundle": "com.mk0.nest",
   "name": "Nest: Pregnancy Tracker",
   "genre": "Health & Fitness",
   "version": "1.5",
@@ -485,6 +529,7 @@
  },
  {
   "id": 6767252690,
+  "bundle": "com.mk0net.Nomada-Atlas",
   "name": "Nomada: Nomad Living Costs",
   "genre": "Travel",
   "version": "1.6",
@@ -496,6 +541,7 @@
  },
  {
   "id": 6767353606,
+  "bundle": "com.mk0.paylog",
   "name": "Payment Tracker: PayLog",
   "genre": "Finance",
   "version": "1.4",
@@ -507,6 +553,7 @@
  },
  {
   "id": 6794920464,
+  "bundle": "com.mk0.resuma",
   "name": "Resuma CV & Cover Letters",
   "genre": "Productivity",
   "version": "1.0",
@@ -518,6 +565,7 @@
  },
  {
   "id": 6780265848,
+  "bundle": "com.mk0net.Filtr-Messages",
   "name": "Spam SMS Blocker: Filtr",
   "genre": "Utilities",
   "version": "1.3",
@@ -529,6 +577,7 @@
  },
  {
   "id": 6780959338,
+  "bundle": "com.mk0net.StepLog",
   "name": "Steps Tracker: StepLog",
   "genre": "Health & Fitness",
   "version": "1.4",
@@ -540,6 +589,7 @@
  },
  {
   "id": 6780253679,
+  "bundle": "com.mk0net.ConnectLog",
   "name": "Store Connect: ConnectLog",
   "genre": "Developer Tools",
   "version": "1.3",
@@ -551,6 +601,7 @@
  },
  {
   "id": 6794924286,
+  "bundle": "com.mk0.sulora",
   "name": "Sulora Journal & Garden",
   "genre": "Lifestyle",
   "version": "1.0",
@@ -562,6 +613,7 @@
  },
  {
   "id": 6780268060,
+  "bundle": "com.mk0net.SupaLog",
   "name": "Supa Dashboard: SupaLog",
   "genre": "Developer Tools",
   "version": "1.02",
@@ -573,6 +625,7 @@
  },
  {
   "id": 6766790409,
+  "bundle": "com.mk0.verte",
   "name": "Verte: Exchange Rates",
   "genre": "Finance",
   "version": "1.02",
@@ -584,6 +637,7 @@
  },
  {
   "id": 6767583217,
+  "bundle": "com.mk0.shieldlog",
   "name": "Warranty Tracker: ShieldLog",
   "genre": "Utilities",
   "version": "1.3",
@@ -595,6 +649,7 @@
  },
  {
   "id": 6791543259,
+  "bundle": "com.mk0.watchidentifier",
   "name": "Watch Identifier AI: WatchSnap",
   "genre": "Education",
   "version": "1.4",
@@ -606,6 +661,7 @@
  },
  {
   "id": 6762632410,
+  "bundle": "com.hydra.Hydration-Tracker",
   "name": "Water Tracker & Log: AquaLog",
   "genre": "Health & Fitness",
   "version": "1.2",
@@ -617,6 +673,7 @@
  },
  {
   "id": 6780243650,
+  "bundle": "com.mk0net.CloudLog",
   "name": "Zone Editor: CloudLog",
   "genre": "Developer Tools",
   "version": "1.4",

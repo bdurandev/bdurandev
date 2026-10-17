@@ -1,0 +1,13 @@
+[
+ {"bundle": "com.mk0.allergenidentifier", "name": "Tracewise: Allergen Scanner"},
+ {"bundle": "com.mk0.fossilidentifier", "name": "Holotype: Fossil Identifier"},
+ {"bundle": "com.mk0.tally", "name": "Tally: Creator Sales Dashboard"},
+ {"bundle": "com.mk0.revpulse", "name": "Revpulse: MRR & Revenue"},
+ {"bundle": "com.mk0.vaxcard", "name": "Vaxcard: Vaccine Record"},
+ {"bundle": "com.mk0.vetrail", "name": "Vetrail: Pet Meds & Vaccines"},
+ {"bundle": "com.mk0.waybill", "name": "Waybill: Delivery Note Maker"},
+ {"bundle": "com.mk0.gearbin", "name": "Gearbin: Tool Inventory"},
+ {"bundle": "com.mk0.tagwave", "name": "Tagwave: WiFi QR & NFC Tags"},
+ {"bundle": "com.mk0.tacho", "name": "Tacho Engine Hours & Service"},
+ {"bundle": "com.mk0.vidalo", "name": "Vidalo: M3U Playlist Player"}
+]

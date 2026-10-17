@@ -2,6 +2,9 @@
 
 Veri herkese açık kaynaklardan gelir, anahtar gerekmez: iTunes Lookup API
 (geliştirici kimliği) ve illustrarch RSS. Kaynak düşerse cache/ içindeki son iyi veri çizilir.
+
+icons/<bundle>.jpg varsa mağaza ikonu yerine o çizilir (yeni ikonlar mağazaya sürümle gider).
+upcoming.json henüz yayında olmayan app'ler; mağazada görünen bundle listeden kendiliğinden düşer.
 """
 import base64
 import json
@@ -31,6 +34,7 @@ SHORT = {
     "Ecommerce Shipping Calculator": "Shipping Calc",
     "Expy Profit Calculator": "Expy",
     "Garage: Diecast & Hot Wheels": "Diecast Garage",
+    "Garage: Diecast Car Collector": "Diecast Garage",
     "Habit Tracker Kit": "Habit Kit",
     "Intermittent Fasting Kit": "Fasting Kit",
     "LoveLog Days Together": "LoveLog",
@@ -47,6 +51,7 @@ SHORT = {
     "Simplio RSS Reader": "RSS Reader",
     "Simplio Shopping List Planner": "Shopping List",
     "Subly Tracker: Subscriptions": "Subly",
+    "Tacho Engine Hours & Service": "Tacho",
     "Turkiye Fuar Takvimi": "Fuar Takvimi",
     "Who Is Domain Checker": "Who Is",
 }
@@ -108,6 +113,7 @@ def fetch_apps():
             icon_uri = f"{mime};base64," + base64.b64encode(icon).decode()
         apps.append({
             "id": r["trackId"],
+            "bundle": r.get("bundleId", ""),
             "name": r["trackName"],
             "genre": r["primaryGenreName"],
             "version": r["version"],
@@ -137,11 +143,28 @@ def fetch_feed(limit=6):
     return items
 
 
+def load_upcoming(apps):
+    """Yayında olmayanlar rafın sonuna; mağazaya çıkan bundle listeden düşer."""
+    path = ROOT / "upcoming.json"
+    if not path.exists():
+        return []
+    live = {a.get("bundle") for a in apps}
+    return [dict(u, upcoming=True) for u in json.loads(path.read_text()) if u["bundle"] not in live]
+
+
+def icon_uri(a):
+    local = ROOT / "icons" / f'{a.get("bundle")}.jpg'
+    if a.get("bundle") and local.exists():
+        return "image/jpeg;base64," + base64.b64encode(local.read_bytes()).decode()
+    return a.get("icon", "")
+
+
 def app_stats(apps):
-    rated = [a for a in apps if a["ratings"]]
+    live = [a for a in apps if not a.get("upcoming")]
+    rated = [a for a in live if a["ratings"]]
     total = sum(a["ratings"] for a in rated)
     avg = sum(a["rating"] * a["ratings"] for a in rated) / total if total else 0
-    return {"apps": len(apps), "rating": avg, "ratings": total}
+    return {"apps": len(apps), "soon": len(apps) - len(live), "rating": avg, "ratings": total}
 
 
 # --- SVG ------------------------------------------------------------------
@@ -181,7 +204,8 @@ def render_apps(apps, themes):
     rows = math.ceil(len(apps) / COLS)
     h = TOP + rows * CELL_H + 6
     cell_w = (WIDTH - 2 * PAD) / COLS
-    summary = f'{s["apps"]} apps · {s["rating"]:.1f}/5 avg · {s["ratings"]} ratings'
+    soon = f' ({s["soon"]} soon)' if s["soon"] else ""
+    summary = f'{s["apps"]} apps{soon} · {s["rating"]:.1f}/5 avg · {s["ratings"]} ratings'
     for theme, c in themes.items():
         out = svg_open(h, c, 16)
         out.append(f'<defs><clipPath id="icon"><rect width="{ICON}" height="{ICON}" rx="14"/></clipPath></defs>')
@@ -192,11 +216,13 @@ def render_apps(apps, themes):
             y = TOP + (i // COLS) * CELL_H
             out.append(
                 f'<g transform="translate({cx - ICON / 2:.1f},{y})">'
-                f'<image width="{ICON}" height="{ICON}" clip-path="url(#icon)" href="data:{a["icon"]}"/>'
+                f'<image width="{ICON}" height="{ICON}" clip-path="url(#icon)" href="data:{icon_uri(a)}"/>'
                 f'<rect width="{ICON}" height="{ICON}" rx="14" fill="none" stroke="{c["cc"]}" stroke-opacity="0.4"/></g>')
             out.append(f'<text x="{cx:.1f}" y="{y + ICON + 20}" text-anchor="middle" font-size="12px" '
                        f'fill="{c["text"]}">{escape(fit(short_name(a["name"]), NAME_MAX))}</text>')
-            if a["ratings"]:
+            if a.get("upcoming"):
+                meta, cls = "soon", "muted"
+            elif a["ratings"]:
                 meta, cls = f'★ {a["rating"]:.1f} ({a["ratings"]})', "key"
             else:
                 meta, cls = f'v{a["version"]}', "muted"
@@ -208,6 +234,7 @@ def render_apps(apps, themes):
 
 def render_recent(apps, feed, themes, n=6):
     col = 54  # karakter; 14px yazıda ~8.4px, sütun ~480px
+    apps = [a for a in apps if not a.get("upcoming")]
     releases = sorted(apps, key=lambda a: (a["released"], a["name"]), reverse=True)[:n]
     left = []
     for a in releases:

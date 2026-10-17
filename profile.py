@@ -27,11 +27,11 @@ STAT_LEFT = 34
 
 INFO = [
     ("title", "bahattin@duran"),
-    ("kv", "OS", "macOS 26, iOS 26"),
+    ("kv", "OS", "macOS 27, iOS 27"),
     ("kv", "Uptime", "29 years"),
     ("kv", "Host", "Make It From Zero"),
     ("kv", "Kernel", "Vibecoder, iOS & Web Developer"),
-    ("kv", "IDE", "Xcode 26, Claude Code"),
+    ("kv", "IDE", "Xcode 27, Claude Code"),
     ("blank",),
     ("kv", "Languages.Programming", "Swift, Python, PHP, JavaScript"),
     ("kv", "Languages.Computer", "HTML, CSS, SQL, Liquid, YAML"),
@@ -304,6 +304,7 @@ if __name__ == "__main__":
             print("ACCESS_TOKEN yok: GitHub sayıları önbellekten çiziliyor", file=sys.stderr)
         stats = json.loads(CACHE.read_text())
     apps = shelf.load("apps.json", shelf.fetch_apps, offline)
+    apps += shelf.load_upcoming(apps)
     feed = shelf.load("feed.json", shelf.fetch_feed, offline)
     stats.update(shelf.app_stats(apps))
     render(stats)

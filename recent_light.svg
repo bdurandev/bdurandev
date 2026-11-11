@@ -9,19 +9,19 @@ text, tspan {white-space: pre;}
 <text x="25" y="40" fill="#24292f"><tspan class="key">bahattin@duran</tspan>:<tspan class="value">~</tspan>$ tail ~/AppStore/releases</text>
 <text x="524" y="40" fill="#24292f"><tspan class="key">bahattin@duran</tspan>:<tspan class="value">~</tspan>$ tail illustrarch.com/feed</text>
 <text x="25" y="70" fill="#24292f">
-<tspan x="25" y="70"><tspan class="muted">11-09  </tspan><tspan class="value">Fuar Takvimi</tspan><tspan class="cc"> ............................ </tspan><tspan class="key">v1.24</tspan></tspan>
-<tspan x="25" y="92"><tspan class="muted">11-09  </tspan><tspan class="value">Sulora Journal &amp; Garden</tspan><tspan class="cc"> .................. </tspan><tspan class="key">v1.1</tspan></tspan>
-<tspan x="25" y="114"><tspan class="muted">11-09  </tspan><tspan class="value">Resuma CV &amp; Cover Letters</tspan><tspan class="cc"> ................ </tspan><tspan class="key">v1.1</tspan></tspan>
-<tspan x="25" y="136"><tspan class="muted">11-09  </tspan><tspan class="value">Klauz Contracts &amp; Signing</tspan><tspan class="cc"> ................ </tspan><tspan class="key">v1.1</tspan></tspan>
-<tspan x="25" y="158"><tspan class="muted">11-08  </tspan><tspan class="value">Who Is</tspan><tspan class="cc"> .................................. </tspan><tspan class="key">v1.29</tspan></tspan>
-<tspan x="25" y="180"><tspan class="muted">11-08  </tspan><tspan class="value">WatchSnap</tspan><tspan class="cc"> ................................ </tspan><tspan class="key">v1.5</tspan></tspan>
+<tspan x="25" y="70"><tspan class="muted">11-10  </tspan><tspan class="value">AquaLog</tspan><tspan class="cc"> .................................. </tspan><tspan class="key">v1.3</tspan></tspan>
+<tspan x="25" y="92"><tspan class="muted">11-10  </tspan><tspan class="value">ShieldLog</tspan><tspan class="cc"> ................................ </tspan><tspan class="key">v1.4</tspan></tspan>
+<tspan x="25" y="114"><tspan class="muted">11-10  </tspan><tspan class="value">SupaLog</tspan><tspan class="cc"> ................................. </tspan><tspan class="key">v1.03</tspan></tspan>
+<tspan x="25" y="136"><tspan class="muted">11-10  </tspan><tspan class="value">Invoice Maker</tspan><tspan class="cc"> ........................... </tspan><tspan class="key">v1.27</tspan></tspan>
+<tspan x="25" y="158"><tspan class="muted">11-10  </tspan><tspan class="value">Daily Routines</tspan><tspan class="cc"> .......................... </tspan><tspan class="key">v1.22</tspan></tspan>
+<tspan x="25" y="180"><tspan class="muted">11-10  </tspan><tspan class="value">Konap</tspan><tspan class="cc"> .................................... </tspan><tspan class="key">v1.3</tspan></tspan>
 </text>
 <text x="524" y="70" fill="#24292f">
-<tspan x="524" y="70"><tspan class="muted">11-10  </tspan><tspan class="value">Three-Room Thracian Temple at Balak Dere May B…</tspan></tspan>
-<tspan x="524" y="92"><tspan class="muted">11-10  </tspan><tspan class="value">Veil House by Turkel Design</tspan></tspan>
-<tspan x="524" y="114"><tspan class="muted">11-09  </tspan><tspan class="value">Álvaro Siza: Architecture, Key Buildings and D…</tspan></tspan>
-<tspan x="524" y="136"><tspan class="muted">11-09  </tspan><tspan class="value">Inspirational Stories #16: Casa d’Abreu Neto, …</tspan></tspan>
-<tspan x="524" y="158"><tspan class="muted">11-09  </tspan><tspan class="value">Brooklyn Museum’s $48 Million Energy Retrofit …</tspan></tspan>
-<tspan x="524" y="180"><tspan class="muted">11-09  </tspan><tspan class="value">House among the trees by Studio COSMO</tspan></tspan>
+<tspan x="524" y="70"><tspan class="muted">11-11  </tspan><tspan class="value">Casa Circular by Ignacio Muñoz</tspan></tspan>
+<tspan x="524" y="92"><tspan class="muted">11-10  </tspan><tspan class="value">From Site Outline to 3D Model to Final Renders…</tspan></tspan>
+<tspan x="524" y="114"><tspan class="muted">11-10  </tspan><tspan class="value">What Is Romanesque Architecture? Features, His…</tspan></tspan>
+<tspan x="524" y="136"><tspan class="muted">11-10  </tspan><tspan class="value">Clearing Beneath Hagia Sophia Reveals a Maze o…</tspan></tspan>
+<tspan x="524" y="158"><tspan class="muted">11-10  </tspan><tspan class="value">Three-Room Thracian Temple at Balak Dere May B…</tspan></tspan>
+<tspan x="524" y="180"><tspan class="muted">11-10  </tspan><tspan class="value">Veil House by Turkel Design</tspan></tspan>
 </text>
 </svg>

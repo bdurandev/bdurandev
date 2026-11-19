@@ -9,19 +9,19 @@ text, tspan {white-space: pre;}
 <text x="25" y="40" fill="#24292f"><tspan class="key">bahattin@duran</tspan>:<tspan class="value">~</tspan>$ tail ~/AppStore/releases</text>
 <text x="524" y="40" fill="#24292f"><tspan class="key">bahattin@duran</tspan>:<tspan class="value">~</tspan>$ tail illustrarch.com/feed</text>
 <text x="25" y="70" fill="#24292f">
-<tspan x="25" y="70"><tspan class="muted">11-16  </tspan><tspan class="value">AquaLog</tspan><tspan class="cc"> .................................. </tspan><tspan class="key">v1.4</tspan></tspan>
-<tspan x="25" y="92"><tspan class="muted">11-16  </tspan><tspan class="value">ShieldLog</tspan><tspan class="cc"> ................................ </tspan><tspan class="key">v1.5</tspan></tspan>
-<tspan x="25" y="114"><tspan class="muted">11-16  </tspan><tspan class="value">Fuar Takvimi</tspan><tspan class="cc"> ............................ </tspan><tspan class="key">v1.25</tspan></tspan>
-<tspan x="25" y="136"><tspan class="muted">11-16  </tspan><tspan class="value">Sulora Journal &amp; Garden</tspan><tspan class="cc"> .................. </tspan><tspan class="key">v1.2</tspan></tspan>
-<tspan x="25" y="158"><tspan class="muted">11-16  </tspan><tspan class="value">Invoice Maker</tspan><tspan class="cc"> ........................... </tspan><tspan class="key">v1.28</tspan></tspan>
-<tspan x="25" y="180"><tspan class="muted">11-16  </tspan><tspan class="value">Daily Routines</tspan><tspan class="cc"> .......................... </tspan><tspan class="key">v1.23</tspan></tspan>
+<tspan x="25" y="70"><tspan class="muted">11-19  </tspan><tspan class="value">LoveLog</tspan><tspan class="cc"> .................................. </tspan><tspan class="key">v1.1</tspan></tspan>
+<tspan x="25" y="92"><tspan class="muted">11-16  </tspan><tspan class="value">AquaLog</tspan><tspan class="cc"> .................................. </tspan><tspan class="key">v1.4</tspan></tspan>
+<tspan x="25" y="114"><tspan class="muted">11-16  </tspan><tspan class="value">ShieldLog</tspan><tspan class="cc"> ................................ </tspan><tspan class="key">v1.5</tspan></tspan>
+<tspan x="25" y="136"><tspan class="muted">11-16  </tspan><tspan class="value">Fuar Takvimi</tspan><tspan class="cc"> ............................ </tspan><tspan class="key">v1.25</tspan></tspan>
+<tspan x="25" y="158"><tspan class="muted">11-16  </tspan><tspan class="value">Sulora Journal &amp; Garden</tspan><tspan class="cc"> .................. </tspan><tspan class="key">v1.2</tspan></tspan>
+<tspan x="25" y="180"><tspan class="muted">11-16  </tspan><tspan class="value">Invoice Maker</tspan><tspan class="cc"> ........................... </tspan><tspan class="key">v1.28</tspan></tspan>
 </text>
 <text x="524" y="70" fill="#24292f">
-<tspan x="524" y="70"><tspan class="muted">11-18  </tspan><tspan class="value">Ocean House by Biazus Arquitetura</tspan></tspan>
-<tspan x="524" y="92"><tspan class="muted">11-17  </tspan><tspan class="value">Pueblo Revival Architecture: Features &amp; Exampl…</tspan></tspan>
-<tspan x="524" y="114"><tspan class="muted">11-17  </tspan><tspan class="value">Mantua’s Palazzo Ducale Nears the End of a 14-…</tspan></tspan>
-<tspan x="524" y="136"><tspan class="muted">11-17  </tspan><tspan class="value">The Plinth House 2 by Luke Stanley Architects</tspan></tspan>
-<tspan x="524" y="158"><tspan class="muted">11-16  </tspan><tspan class="value">Famous Buildings in Tokyo: Landmarks of Japane…</tspan></tspan>
-<tspan x="524" y="180"><tspan class="muted">11-16  </tspan><tspan class="value">SUPRA by SO? Architecture and Ideas</tspan></tspan>
+<tspan x="524" y="70"><tspan class="muted">11-19  </tspan><tspan class="value">Encontros Sculpture by Estudio Guto Requena</tspan></tspan>
+<tspan x="524" y="92"><tspan class="muted">11-18  </tspan><tspan class="value">Lacaton &amp; Vassal: Never Demolish and the Archi…</tspan></tspan>
+<tspan x="524" y="114"><tspan class="muted">11-18  </tspan><tspan class="value">Doric Architecture: The Doric Order Explained</tspan></tspan>
+<tspan x="524" y="136"><tspan class="muted">11-18  </tspan><tspan class="value">Not a Museum Will Fill Tokyo’s Former Imperial…</tspan></tspan>
+<tspan x="524" y="158"><tspan class="muted">11-18  </tspan><tspan class="value">Ocean House by Biazus Arquitetura</tspan></tspan>
+<tspan x="524" y="180"><tspan class="muted">11-17  </tspan><tspan class="value">Pueblo Revival Architecture: Features &amp; Exampl…</tspan></tspan>
 </text>
 </svg>
